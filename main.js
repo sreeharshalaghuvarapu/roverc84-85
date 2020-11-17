@@ -40,4 +40,41 @@ function add()
                      { down();
                        console.log("down");
                        }
+                      }
+                    function up(){
+                      if (rover_y>=0){
+                        rover_y=rover_y-10;
+                        console.log("when up arrow is pressed,x="+rover_x+ "y="+rover_y);
+                        uploadBackground();
+                        uploadrover();
+                      }
                     }
+
+                    function down(){
+                      if (rover_y<=500){
+                        rover_y=rover_y+10;
+                        console.log("when down arrow is pressed,x="+rover_x+ "y="+rover_y);
+                        uploadBackground();
+                        uploadrover();
+                      }
+                    }
+
+                    function left(){
+                      if (rover_x>=0){
+                        rover_x=rover_x-10;
+                        console.log("when left arrow is pressed,x="+rover_x+ "y="+rover_x);
+                        uploadBackground();
+                        uploadrover();
+                      }
+                    }
+
+                    function right(){
+                      if (rover_x<=700){
+                        rover_x=rover_x+10;
+                        console.log("when right arrow is pressed,x="+rover_x+ "y="+rover_x);
+                        uploadBackground();
+                        uploadrover();
+                      }
+                    }
+
+                  
